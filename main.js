@@ -56,7 +56,7 @@ function setDialNeedles() {
     needle.className = 'needle';
     dial.appendChild(needle);
     const degrees = (value / 100) * 180 - 90;
-    needle.style.transform = `translate(-50%, -100%) rotate(${degrees}deg)`;
+    dial.style.setProperty('--needle-angle', `${degrees}deg`);
   });
 }
 
