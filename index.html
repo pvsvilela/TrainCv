@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Express</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="background-layers" aria-hidden="true">
+    <div class="layer sky"></div>
+    <div class="layer mountains"></div>
+    <div class="layer tracks"></div>
+  </div>
+  <header class="station" id="station">
+    <div class="station-inner">
+      <div class="station-copy">
+        <p class="eyebrow">Welcome to the terminal</p>
+        <h1>Career Express</h1>
+        <p class="lead">Embark on an immersive train journey through my professional timeline. Every car reveals a new chapter—education, growth, projects, and the destinations still ahead.</p>
+        <button class="cta" data-board>Board the Train</button>
+      </div>
+      <div class="station-panel">
+        <div class="panel-header">
+          <span>Departure Board</span>
+          <div class="sound-toggle">
+            <label for="sound">Train ambience</label>
+            <button id="soundToggle" aria-pressed="false">Sound off</button>
+          </div>
+        </div>
+        <ul class="departure-list">
+          <li><span>Platform 1</span><strong>Locomotive · Present Mission</strong></li>
+          <li><span>Platform 2</span><strong>Academy · Foundation Years</strong></li>
+          <li><span>Platform 3</span><strong>First Post · Junior Engineer</strong></li>
+          <li><span>Platform 4</span><strong>Workshop · Skill Growth</strong></li>
+          <li><span>Platform 5</span><strong>Gallery · Flagship Projects</strong></li>
+          <li><span>Platform 6</span><strong>Hall of Accolades</strong></li>
+          <li><span>Platform 7</span><strong>Dining Car · Testimonials</strong></li>
+          <li><span>Platform 8</span><strong>Caboose · Contact</strong></li>
+        </ul>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll or swipe to journey through the cars</span>
+      <div class="chevrons" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="route-map" aria-label="Career stations">
+    <ol>
+      <li><a href="#locomotive" class="active" data-station-link>Locomotive</a></li>
+      <li><a href="#education" data-station-link>Education</a></li>
+      <li><a href="#first-role" data-station-link>First Job</a></li>
+      <li><a href="#skills" data-station-link>Skills</a></li>
+      <li><a href="#projects" data-station-link>Projects</a></li>
+      <li><a href="#achievements" data-station-link>Achievements</a></li>
+      <li><a href="#dining" data-station-link>Dining Car</a></li>
+      <li><a href="#caboose" data-station-link>Caboose</a></li>
+    </ol>
+    <div class="progress-track">
+      <div class="progress-fill"></div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="car locomotive" id="locomotive" data-station="Locomotive">
+      <div class="car-content">
+        <p class="label">Engine Room · Present</p>
+        <h2>Heading the locomotive</h2>
+        <p>Currently leading cross-functional teams to craft immersive, user-focused products. I engineer performant web experiences, orchestrate design systems, and keep this train moving toward meaningful impact.</p>
+        <div class="gauges">
+          <div>
+            <span>Leadership</span>
+            <div class="gauge"><span style="width: 85%"></span></div>
+          </div>
+          <div>
+            <span>Strategy</span>
+            <div class="gauge"><span style="width: 75%"></span></div>
+          </div>
+          <div>
+            <span>Innovation</span>
+            <div class="gauge"><span style="width: 80%"></span></div>
+          </div>
+        </div>
+        <div class="future-goals">
+          <h3>Next Stations</h3>
+          <ul>
+            <li>Build inclusive design culture</li>
+            <li>Prototype mixed reality storytelling</li>
+            <li>Mentor the next wave of builders</li>
+          </ul>
+        </div>
+      </div>
+      <div class="car-visual">
+        <div class="engine-illustration">
+          <div class="engine-body"></div>
+          <div class="engine-window"></div>
+          <div class="engine-smoke">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="car education" id="education" data-station="Education">
+      <div class="car-content">
+        <p class="label">Car 2 · Education</p>
+        <h2>Academic foundations</h2>
+        <div class="timeline">
+          <article>
+            <h3>Design &amp; Computer Science</h3>
+            <p>Dual-degree focused on human-computer interaction and interactive media. Graduated with honors.</p>
+            <span class="meta">2012 – 2016</span>
+          </article>
+          <article>
+            <h3>Motion Design Residency</h3>
+            <p>Explored storytelling through kinetic typography and animation principles.</p>
+            <span class="meta">2016 – 2017</span>
+          </article>
+          <article>
+            <h3>Continual Learning</h3>
+            <p>Certified in Product Strategy, Creative Coding, and Design Leadership.</p>
+            <span class="meta">2018 – Present</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="car first-role" id="first-role" data-station="First Job">
+      <div class="car-content">
+        <p class="label">Car 3 · First Assignment</p>
+        <h2>Junior Experience Engineer</h2>
+        <p>Joined a boutique studio as their first hybrid designer-engineer. Helped deliver digital campaigns and interactive installations.</p>
+        <ul class="highlights">
+          <li>Developed micro-interactions for national brand campaign.</li>
+          <li>Built internal toolkit reducing prototyping time by 30%.</li>
+          <li>Collaborated with illustrators to deliver live event visuals.</li>
+        </ul>
+        <div class="media-wall">
+          <div>
+            <span>Installations</span>
+            <p>Projection-mapped murals triggered by motion sensors.</p>
+          </div>
+          <div>
+            <span>Campaigns</span>
+            <p>Interactive landing pages with real-time data visualizations.</p>
+          </div>
+          <div>
+            <span>Tooling</span>
+            <p>Command-line utilities to scaffold experiments rapidly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="car skills" id="skills" data-station="Skills">
+      <div class="car-content">
+        <p class="label">Car 4 · Workshop</p>
+        <h2>Skill workshop</h2>
+        <div class="skill-grid">
+          <article>
+            <h3>Experience Design</h3>
+            <p>Journey mapping, rapid prototyping, accessibility, narrative design.</p>
+            <div class="dial" data-value="90"></div>
+          </article>
+          <article>
+            <h3>Creative Engineering</h3>
+            <p>React, WebGL, GSAP, Three.js, Framer Motion, animation systems.</p>
+            <div class="dial" data-value="85"></div>
+          </article>
+          <article>
+            <h3>Product Leadership</h3>
+            <p>Sprint facilitation, stakeholder storytelling, roadmap strategy.</p>
+            <div class="dial" data-value="78"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="car projects" id="projects" data-station="Projects">
+      <div class="car-content">
+        <p class="label">Car 5 · Gallery</p>
+        <h2>Flagship projects</h2>
+        <div class="projects-grid">
+          <article>
+            <h3>Immersive Museum Tour</h3>
+            <p>WebGL-powered gallery companion featuring real-time lighting and narration.</p>
+            <span class="meta">Lead Creative Engineer · 2020</span>
+          </article>
+          <article>
+            <h3>Eco Transit App</h3>
+            <p>Designed end-to-end product connecting eco-routes with community incentives.</p>
+            <span class="meta">Product Designer · 2021</span>
+          </article>
+          <article>
+            <h3>Storybook OS</h3>
+            <p>A playful desktop experience for kids to explore STEM stories interactively.</p>
+            <span class="meta">Experience Director · 2022</span>
+          </article>
+          <article>
+            <h3>Metaverse Atelier</h3>
+            <p>Prototype environment blending spatial audio, narrative cues, and branded spaces.</p>
+            <span class="meta">R&amp;D Lead · 2023</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="car achievements" id="achievements" data-station="Achievements">
+      <div class="car-content">
+        <p class="label">Car 6 · Hall of Accolades</p>
+        <h2>Milestones &amp; recognition</h2>
+        <div class="achievement-grid">
+          <article>
+            <h3>Design Impact Award</h3>
+            <p>Honored for crafting inclusive experiences for public services.</p>
+            <span class="metric">Top 3 out of 450 submissions</span>
+          </article>
+          <article>
+            <h3>Patent Pending</h3>
+            <p>Filed for adaptive narration system translating UX flows into audio cues.</p>
+            <span class="metric">Filed 2022</span>
+          </article>
+          <article>
+            <h3>Speaking Circuit</h3>
+            <p>Presented at Interaction, Config, and Beyond Tellerrand.</p>
+            <span class="metric">12 international talks</span>
+          </article>
+          <article>
+            <h3>Mentorship</h3>
+            <p>Guided 40+ mentees into product and design roles.</p>
+            <span class="metric">8 mentorship programs</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="car dining" id="dining" data-station="Dining">
+      <div class="car-content">
+        <p class="label">Car 7 · Dining Car</p>
+        <h2>Testimonials &amp; soft skills</h2>
+        <div class="testimonials">
+          <blockquote>
+            <p>“A rare blend of craft and clarity. Turns every milestone into an experience.”</p>
+            <cite>— Creative Director, Lumen Labs</cite>
+          </blockquote>
+          <blockquote>
+            <p>“Brings contagious enthusiasm to the team and elevates the work with storytelling.”</p>
+            <cite>— Head of Product, Wanderly</cite>
+          </blockquote>
+          <blockquote>
+            <p>“Translates complex tech into memorable journeys for clients and users alike.”</p>
+            <cite>— Innovation Partner, Northwind</cite>
+          </blockquote>
+        </div>
+        <div class="soft-skills">
+          <span>Empathy</span>
+          <span>Facilitation</span>
+          <span>Systems Thinking</span>
+          <span>Public Speaking</span>
+          <span>Community Building</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="car caboose" id="caboose" data-station="Caboose">
+      <div class="car-content">
+        <p class="label">Caboose · Contact</p>
+        <h2>Let's connect before the next departure</h2>
+        <p>Ready to collaborate on the next chapter? Reach out for consulting, speaking, or new adventures.</p>
+        <div class="contact-actions">
+          <a href="mailto:hello@careerexpress.com" class="ticket">Email Dispatch</a>
+          <a href="#" class="ticket">Download CV</a>
+          <a href="#station" class="ticket">Back to Station</a>
+        </div>
+        <div class="socials">
+          <a href="#">LinkedIn</a>
+          <a href="#">Dribbble</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+      <div class="rear-view">
+        <p>Tracks fade into the sunrise. Thanks for taking the ride.</p>
+      </div>
+    </section>
+  </main>
+
+  <audio id="ambientAudio" loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_5ce638305a.mp3?filename=train-bogie-runs-pass-by-19025.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="main.js"></script>
+</body>
+</html>
